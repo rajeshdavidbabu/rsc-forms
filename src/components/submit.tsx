@@ -6,10 +6,8 @@ export function Submit() {
   const { pending } = useFormStatus();
 
   return (
-    <>
-      <Button type="reset" variant={"outline"}>
-        Reset
-      </Button>
+    <div className="my-4">
+      <Button type="reset">Reset</Button>
       <Button
         type="submit"
         variant={"outline"}
@@ -18,6 +16,6 @@ export function Submit() {
       >
         {pending ? "Submitting" : "Submit"}
       </Button>
-    </>
+    </div>
   );
 }
