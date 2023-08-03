@@ -3,11 +3,6 @@ import { addEmailToDB } from "@/db";
 import { revalidatePath } from "next/cache";
 import { Submit } from "./submit";
 
-let submission = {
-  success: false,
-  error: null,
-};
-
 export function EmailForm() {
   async function addEmail(formData: FormData) {
     "use server";
@@ -25,7 +20,6 @@ export function EmailForm() {
         <label htmlFor="email">Email</label>
         <Input id="email" name="email" />
       </div>
-      {state.getError()}
       <br />
       <Submit />
     </form>
