@@ -1,4 +1,5 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 
 export const Subscribers = ({ emails }: { emails: string[] | null }) => {
   return (
@@ -9,7 +10,11 @@ export const Subscribers = ({ emails }: { emails: string[] | null }) => {
           <CardContent className="p-4">
             <ul>
               {emails.map((email) => {
-                return <li>{email}</li>;
+                return (
+                  <li>
+                    <Label>{email}</Label>
+                  </li>
+                );
               })}
             </ul>
           </CardContent>

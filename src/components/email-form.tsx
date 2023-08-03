@@ -12,11 +12,9 @@ export function EmailForm() {
     "use server";
 
     const email = formData.get("email") as string;
-
     const result = emailSchema.safeParse(email);
 
     if (!result.success) {
-      console.log(result.error);
       const { errors: zodErrors } = result.error;
       error = zodErrors[0].message;
     } else {
