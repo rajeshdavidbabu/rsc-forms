@@ -1,5 +1,6 @@
-# infinite-scroll-server-actions
+# rsc-forms
 
-A simple infinite scroll implemented using Next.13 server actions and shadcn-ui
+A simple server-rendered forms implemented using Next.13 server actions and shadcn-ui
 
-<img width="1157" alt="Screenshot 2023-07-27 at 17 06 21" src="https://github.com/rajeshdavidbabu/infinite-scroll-server-actions/assets/15684795/00565870-a8c8-43d3-b4a7-8876d9091a44">
+
+<img width="1073" alt="Screenshot 2023-08-06 at 14 28 23" src="https://github.com/rajeshdavidbabu/rsc-forms/assets/15684795/78579493-ca91-4e26-a4e2-808c74160f3b">
