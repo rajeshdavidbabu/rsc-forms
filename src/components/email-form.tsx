@@ -1,8 +1,8 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 import { addEmailToDB } from "@/db";
 import { revalidatePath } from "next/cache";
-import { Submit } from "./submit";
 import { emailSchema } from "@/zod";
 
 let error: string | null = null;
@@ -34,7 +34,12 @@ export function EmailForm() {
         <Input id="email" name="email" />
       </div>
       {error && <Label className="text-red-500">{error}</Label>}
-      <Submit />
+      <div className="my-4">
+        <Button type="reset">Reset</Button>
+        <Button type="submit" variant={"outline"} className={"ml-4"}>
+          Submit
+        </Button>
+      </div>
     </form>
   );
 }
